@@ -4,23 +4,28 @@ body {
     padding: 0;
 }
 
-header {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    padding: 20px 50px;
+nav
+{
     background-color: #ffffff;
-    justify-content: space-between ;
+    padding: 20px;
+    display: flex;
+    max-width: 70px;
+    position: fixed;
+   
 }
-
-
-
-
+nav img {
+    max-width: 100%; /* Garante que a imagem não se expanda além do tamanho da nav */
+    height: auto; /* Mantém a proporção da imagem */
+}
 nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
     
+}
+nav ul li
+{
+    display: inline;
 }
 
 
@@ -95,4 +100,46 @@ footer {
 .morango
 {
     color: red;
+}
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.hamburger-menu div {
+    width: 2rem;
+    height: 0.25rem;
+    background-color: #333;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+@media (max-width: 600px) {
+    .hamburger-menu {
+        display: flex;
+        margin-bottom: 1%;
+    }
+    
+    nav ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    nav img {
+        display: none;
+    }
+
+    h1 {
+        font-size: 20px; /* Reduz o tamanho da fonte */
+        margin-bottom: 20px; /* Adiciona espaço abaixo do h1 */
+    }
+    .refresher img {
+        display: none;
+    }
 }
