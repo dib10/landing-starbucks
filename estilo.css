@@ -6,7 +6,7 @@ body {
 
 nav
 {
-    background-color: #ffffff;
+    background-color: transparent;
     padding: 20px;
     display: flex;
     max-width: 70px;
